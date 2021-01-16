@@ -1,4 +1,4 @@
-ELECT usename AS role_name,
+SELECT usename AS role_name,
   CASE 
      WHEN usesuper AND usecreatedb THEN 
 	   CAST('superuser, create database' AS pg_catalog.text)
